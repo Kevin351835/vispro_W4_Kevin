@@ -18,7 +18,10 @@ analyzer:
     - windows/**
     - macos/**
     - linux/**
+<<<<<<< HEAD
     - test/lab04_test.dart
+=======
+>>>>>>> f6385ae7d363f022f66564ba3f51e50ed49e0dcc
 
 linter:
   # The lint rules applied to this project can be customized in the

@@ -5,9 +5,15 @@ plugins {
 }
 
 android {
+<<<<<<< HEAD
     namespace = "com.example.lab04"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = "30.0.16248370"
+=======
+    namespace = "com.example.homework_4"
+    compileSdk = flutter.compileSdkVersion
+    ndkVersion = flutter.ndkVersion
+>>>>>>> f6385ae7d363f022f66564ba3f51e50ed49e0dcc
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -16,7 +22,11 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
+<<<<<<< HEAD
         applicationId = "com.example.lab04"
+=======
+        applicationId = "com.example.homework_4"
+>>>>>>> f6385ae7d363f022f66564ba3f51e50ed49e0dcc
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = flutter.minSdkVersion

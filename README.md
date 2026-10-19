@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 1. Track: Track B — The Lore & Discovery 
 Hub.Deskripsi: Aplikasi katalog/direktori C-Drama yang terbagi ke dalam 3 sub-genre (Xianxia, Wuxia, dan Historical/Palace) untuk mengeksplorasi cerita, statistik episode, dan daftar pemeran utama.
 
@@ -31,3 +32,22 @@ File APK rilis yang dapat diinstal langsung pada perangkat Android:
    
    5. Jalankan aplikasi:
    flutter run
+=======
+# homework_4
+
+A new Flutter project.
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+>>>>>>> f6385ae7d363f022f66564ba3f51e50ed49e0dcc

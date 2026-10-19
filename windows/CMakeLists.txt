@@ -1,10 +1,18 @@
 # Project-level configuration.
 cmake_minimum_required(VERSION 3.14)
+<<<<<<< HEAD
 project(lab04 LANGUAGES CXX)
 
 # The name of the executable created for the application. Change this to change
 # the on-disk name of your application.
 set(BINARY_NAME "lab04")
+=======
+project(homework_4 LANGUAGES CXX)
+
+# The name of the executable created for the application. Change this to change
+# the on-disk name of your application.
+set(BINARY_NAME "homework_4")
+>>>>>>> f6385ae7d363f022f66564ba3f51e50ed49e0dcc
 
 # Explicitly opt in to modern CMake behaviors to avoid warnings with recent
 # versions of CMake.

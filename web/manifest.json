@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
     "name": "lab04",
     "short_name": "lab04",
+=======
+    "name": "homework_4",
+    "short_name": "homework_4",
+>>>>>>> f6385ae7d363f022f66564ba3f51e50ed49e0dcc
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
