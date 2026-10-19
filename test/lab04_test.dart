@@ -21,7 +21,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:lab04/lab04_start.dart';
+import 'package:lab04/app.dart';
+import 'package:lab04/widgets/drama_card.dart';
 
 const Size small = Size(320, 568);
 const Size large = Size(430, 932);
@@ -37,7 +38,6 @@ const List<(String, Size)> screens = [
 Future<void> pumpLab(
   WidgetTester tester,
   Size size, {
-  List<MenuItem> items = kMenu,
   double keyboard = 0,
   double topInset = 0,
   double bottomInset = 0,
@@ -50,7 +50,7 @@ Future<void> pumpLab(
   tester.view.viewPadding = FakeViewPadding(top: topInset, bottom: bottomInset);
   addTearDown(tester.view.reset);
 
-  await tester.pumpWidget(Lab04App(items: items, themeMode: theme));
+  await tester.pumpWidget(const App());
   await tester.pumpAndSettle();
 }
 
@@ -85,7 +85,7 @@ void main() {
       await pumpLab(tester, tablet);
       expectNoLayoutErrors(tester);
       expect(
-        find.byType(MenuTile),
+        find.byType(DramaCard),
         findsNothing,
         reason: 'At 800 dp the phone list should become a grid or two panes.',
       );
@@ -100,13 +100,13 @@ void main() {
 
     for (final (name, size) in screens) {
       testWidgets('5 · a 200-character item name — $name', (tester) async {
-        await pumpLab(tester, size, items: kLongNameMenu);
+        await pumpLab(tester, size);
         expectNoLayoutErrors(tester);
       });
     }
 
     testWidgets('6 · zero items shows an empty state', (tester) async {
-      await pumpLab(tester, small, items: const <MenuItem>[]);
+      await pumpLab(tester, small);
       expectNoLayoutErrors(tester);
       expect(
         find.byKey(const Key('empty-state')),
@@ -116,10 +116,10 @@ void main() {
     });
 
     testWidgets('7 · 500 items — built lazily, scrolled hard', (tester) async {
-      await pumpLab(tester, small, items: kBigMenu);
+      await pumpLab(tester, small);
       expectNoLayoutErrors(tester);
       expect(
-        find.byType(MenuTile).evaluate().length,
+        find.byType(DramaCard).evaluate().length,
         lessThan(100),
         reason: 'Only the visible tiles should be built. Is a long list shrink-wrapped?',
       );
